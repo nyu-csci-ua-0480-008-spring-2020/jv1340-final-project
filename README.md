@@ -1,15 +1,15 @@
 
-#Jahnavi Vyas - Final Project
+# Jahnavi Vyas - Final Project
 
-#Coronavirus Donations
+# Coronavirus Donations
 
-##Overview:
+## Overview:
 
 During the COVID-19 pandemic, New York City has emerged as the world's epicenter. As many in the city rely on a vocation that is in-person, they now find themselves out of work. There have been shortages for many household supplies, such as groceries and toilet paper. This has had devastating effects on the population as many struggle to acquire basic needed items. On the flip side, many have also begun to hoard essential items that may go bad without ever being used. 
 
 Coronavirus Donations is an app that allows users to connect with those who are donating or in need. Users will be categorized by the borough that they reside in, and will be able to contact each other to arrange for a no-contact pickup. 
 
-##Data Model
+## Data Model
 
 This application will store Users and their donations if they choose to donate.
 
@@ -32,17 +32,17 @@ An Example Donation:
 	quantity: 5
 }
 
-##Link to Commented First Draft Schema
+## Link to Commented First Draft Schema
 
 https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/db.js
 
-##Wireframes
+## Wireframes
 
 
-##Site Map
+## Site Map
 
 
-##User Stories
+## User Stories
 
 1. As a non-registered user, I can register with a new account and log in to the site.
 
@@ -56,7 +56,7 @@ https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/ma
 
 6. As a user, I can view all donations by borough.
 
-##Research Topics
+## Research Topics
 
 (3 points) Integrate user authentication
 
@@ -66,11 +66,11 @@ I am using Passport.js for user authentication.
 
 https://www.w3schools.com/js/js_validation.asp
 
-##Link to Initial Main Project File
+## Link to Initial Main Project File
 
 https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/app.js
 
-##Annotations/References Used
+## Annotations/References Used
 
 1. https://github.com/Createdd/Writing/blob/master/2017/articles/AuthenticationIntro.md#user-registration
 
