@@ -2,6 +2,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+   function validateForm() {
+  var x = document.forms["donations"]["quantity"].value;
+  if (x == "") {
+    alert("Quantity must be filled out");
+    return false;
+  }
+}
+</script>
 <style>
 
 </style>
@@ -9,8 +18,10 @@
 <body>
 
     <h1>Donation List</h1>
+    
 
-     <form action="/donations" method="POST" style="width: 450px;" >
+
+     <form action="/donations" onsubmit="return validateForm()" method="POST" style="width: 450px;" >
         <div class="container">
           <p style="margin-top: 120px;">Please list the item and quantity you'd like to donate. </p>
           <hr>

@@ -437,14 +437,14 @@ User.register(new User({
 
 
 
-
+/**
 
 app.listen(process.env.PORT || AIT_PORT, (err) => {
 	console.log('Server started (ctrl + c to shut down)'); 
 
 });
 
-
+**/
 app.listen(process.env.PORT || 3000)
 
 
