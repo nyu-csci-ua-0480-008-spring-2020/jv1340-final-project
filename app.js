@@ -247,19 +247,23 @@ function printDonationsNameEmail(boroughArray){
 
 make a read md 
 
-handle css
+//handle css
 
 deploy w aws
 
 gitignore
 
+json files?
+
+print on html
+
 //update function??
 
 //print
 
-special topics
+//special topics
 
-unit tests and another api
+//unit tests and another api
 
 //app.post (get info):
 //forms: 

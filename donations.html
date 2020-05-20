@@ -5,8 +5,8 @@
 <script>
    function validateForm() {
   var x = document.forms["donations"]["quantity"].value;
-  if (x == "") {
-    alert("Quantity must be filled out");
+  if (x <= 0) {
+    alert("Quantity must be greater than 0");
     return false;
   }
 }

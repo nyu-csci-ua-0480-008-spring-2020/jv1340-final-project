@@ -3,87 +3,81 @@
 
 #Coronavirus Donations
 
-Overview:
+##Overview:
 
-Data Model:
-QuickMeal
+During the COVID-19 pandemic, New York City has emerged as the world's epicenter. As many in the city rely on a vocation that is in-person, they now find themselves out of work. There have been shortages for many household supplies, such as groceries and toilet paper. This has had devastating effects on the population as many struggle to acquire basic needed items. On the flip side, many have also begun to hoard essential items that may go bad without ever being used. 
 
-QuickMeal
-Overview
-The inability to pay for meal plans and on-campus dining services or have time to consistently cook can oftentimes pressure students into pursuing unhealthy, less expensive eating options, or worse, not eating at all. Food insecurity has become an increasingly greater issue as the cost of living and tuition steadily increase.
+Coronavirus Donations is an app that allows users to connect with those who are donating or in need. Users will be categorized by the borough that they reside in, and will be able to contact each other to arrange for a no-contact pickup. 
 
-QuickMeal is a web app that will allow users to send and recieve meal swipes that will go directly to students' accounts or to a general donation pool. Once students create an account with their university credentials and logged in, they can view their current meal plan, and send/request meal swipes to one student or to a general donation pool.
+##Data Model
 
-Data Model
-The application will store user's personal info (first and last name and, university ID number, password), meal plan, university name, and number of meals in the current donation pool
+This application will store Users and their donations if they choose to donate.
 
-An Example User:
+An Example User: 
 
 {
-  userFirstName: "Selamawit",
-  userLastName: "Moges",
-  userID: "sm6957",
-  hash: "#####", // a password hash,
-   
-An Example User Meal Plan:
+	firstName: "Jahnavi",
+	lastName: "Vyas",
+	email: "jv1340@nyu.edu",
+	password: #####,
+	borough: "Manhattan",
+	donations: ["2% milk", 5]
 
-{
-  // a reference to a User object
-  userID:"sm6957", 
-  mealPlan: 
-    { mealPlanName: "300 Flex Plus", 
-    mealPerSemester: 300, 
-    diningDollars: 250,
-    numberOfMealsDistributed: 0 //number of meals swipes sent to other students accounts
-    },
-    mealRequests:["sd2314","lr4657"] // an array holding the ID's of users that are requesting meals
-   
 }
-Link to Commented First Draft Schema
-https://github.com/nyu-csci-ua-0480-008-spring-2020/sm6957-final-project/blob/master/db.js
 
-Wireframes
-/login - page logging into your account
+An Example Donation:
 
-login
+{
+	item: "2% milk",
+	quantity: 5
+}
 
-/register - registration page for new users
+##Link to Commented First Draft Schema
 
-register
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/db.js
 
-/quickMeal - landing page for web app
+##Wireframes
 
-landing page landing page when user A has a meal request from user B
 
-Site map
-Here's QuickMeal's site map, but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
+##Site Map
 
-User Stories or Use Cases
-User Story:
 
-As a non-registered user, I can register a new account with the site
-As a user I can log in to the site
-As a user I can send, request, or donate meal swipes/dining dollars/campus cash to other registered users
-As a user I can see pending requests by expanding the hamburger icon
-As a user I can accept/reject pending requests
-As a user I can view my current account balance
-Research Topics
-(TODO: the research topics that you're planning on working on along with their point values... and the total points of research topics listed)
+##User Stories
+
+1. As a non-registered user, I can register with a new account and log in to the site.
+
+2. As a user, I can log in t the site.
+
+3. As a user, I can choose whether I want to donate.
+
+4. As a user, I can enter donations.
+
+5. As a user, I can add additonal donations.
+
+6. As a user, I can view all donations by borough.
+
+##Research Topics
 
 (3 points) Integrate user authentication
 
-I'm going to be using passport for user authentication
-(2 points) Use a CSS framework (bootstrap)
+I am using Passport.js for user authentication.
 
 (3 points) Perform client side form validation using JavaScript
 
-Link to Initial Main Project File
-https://github.com/nyu-csci-ua-0480-008-spring-2020/sm6957-final-project/blob/master/app.js
+https://www.w3schools.com/js/js_validation.asp
 
-(TODO: create a skeleton Express application with a package.json, app.js, views folder, etc. ... and link to your initial app.js)
+##Link to Initial Main Project File
 
-Annotations / References Used
-(TODO: list any tutorials/references/etc. that you've based your code off of)
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/app.js
 
-tutorial on how to create a registration page
-tutorial on how to create a login page
+##Annotations/References Used
+
+1. https://github.com/Createdd/Writing/blob/master/2017/articles/AuthenticationIntro.md#user-registration
+
+2. https://medium.com/createdd-notes/starting-with-authentication-a-tutorial-with-node-js-and-mongodb-25d524ca0359
+
+3. http://www.passportjs.org/docs/
+
+4. https://www.w3schools.com/howto/howto_css_register_form.asp
+
+5. https://www.w3schools.com/js/js_validation.asp
