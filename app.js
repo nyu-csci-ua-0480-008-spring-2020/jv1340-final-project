@@ -222,9 +222,10 @@ function printDonationsNameEmail(boroughArray){
 
 	if (!(Users.find ({ donations: })) === ""))){
 		console.log(
-	'Name: ' + User.firstname + User.lastname + '\n' + "Email: " + User.emailID + '\n' + 'Donations: ')
+	'Name: ' + User.firstname + " " + User.lastname + '\n' + "Email: " + User.emailID + '\n' + 'Donations: ')
 		
 		console.log(User.donations.forEach.toString(); + '\n')
+    // how do i print it like 5 x gallons for example
 		//User.donations.toString()); 
 	//email address
 	//

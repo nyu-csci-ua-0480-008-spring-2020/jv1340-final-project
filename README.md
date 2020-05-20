@@ -38,15 +38,23 @@ https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/ma
 
 ## Wireframes
 
+In order:
+
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Register.jpeg
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/LogIn.jpeg
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Category.jpeg
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Donations.jpeg
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Forum.jpeg
 
 ## Site Map
 
+https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Site%20Map.jpeg
 
 ## User Stories
 
 1. As a non-registered user, I can register with a new account and log in to the site.
 
-2. As a user, I can log in t the site.
+2. As a user, I can log in to the site.
 
 3. As a user, I can choose whether I want to donate.
 
