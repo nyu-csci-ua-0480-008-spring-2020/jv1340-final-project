@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+    <h1>Coronavirus Donations<h1>
+    <p>NYC Residents: Use this site to post listings of items you want to donate or to connect with those who are donating during the COVID-19 pandemic.<p>
+    <h1>Register</h1>
+
+     <form action="/register" method="POST" style="width: 450px;" >
+        <div class="container">
+          <p style="margin-top: 120px;">Please register to create an account.</p>
+          <hr>
+
+            <input type="text" id="login" name="fname" placeholder="First Name" required>
+          </div>
+          <div>
+            <input type="text" id="login" name="lname" placeholder="Last Name" required>
+          </div>
+          <div>
+            <input type="text" id="login" name="email" placeholder="Email" required>
+          </div>
+          <div>
+            <input type="text" id="login" name="password" placeholder="Password" required>
+          </div>
+                  <div>
+            <label for="borough">NYC Borough:</label>
+            <select id="borough" name="borough">
+              <option value="bronx">Bronx</option>
+              <option value="brooklyn">Broolyn</option>
+              <option value="manhattan">Manhattan</option>
+              <option value="queens">Queens</option>
+              <option value="staten island">Staten Island</option>
+            </select>
+          </div>
+          <br>
+
+
+
+          <a href="/logout"><input type="submit" value="Register"></a>
+        
+
+
+        </form>
+         
+
+         <form action="/logout" method="GET" style="width: 450px;" >
+
+
+ <a href='/login'><button>Log In</button></a>
+
+
+
+
+</form>
+
+
+
+  
+  </div>
+  
+
+
+</body>
+</html>
+
+
+
+
+
+ 
+
+
+
+
+
+
