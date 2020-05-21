@@ -246,7 +246,7 @@ function printDonationsNameEmail(boroughArray){
 
 //make list of crediting all links
 
-make a read md 
+//make a read md 
 
 //handle css
 

@@ -34,21 +34,20 @@ An Example Donation:
 
 ## Link to Commented First Draft Schema
 
+
 https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/db.js
 
 ## Wireframes
 
-In order:
-
-https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Register.jpeg
-https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/LogIn.jpeg
-https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Category.jpeg
-https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Donations.jpeg
-https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Forum.jpeg
+Register: https://ibb.co/0j0XG0r
+Log In: https://ibb.co/br46mxh
+Category: https://ibb.co/wWM3H4p
+Donations: https://ibb.co/gRYMwZL
+Forum: https://ibb.co/kg2sFb8
 
 ## Site Map
 
-https://github.com/nyu-csci-ua-0480-008-spring-2020/jv1340-final-project/blob/master/Site%20Map.jpeg
+https://ibb.co/p1YRxph
 
 ## User Stories
 
