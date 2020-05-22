@@ -176,42 +176,63 @@ if (req.body.item &&
 }
 });
 
+
+
+
     var bronxResidents =[];
     var brooklynResidents =[];
     var manhattanResidents =[];
     var queensResidents =[];
     var statenIslandResidents =[];
+    var allResidents = [];
 
 app.get("/forum", loggedIn, function(req, res){
     //put all users into different arrays
-    if (Users.find ({ borough: bronx})){
-    	bronxResidents.push(User);
-      res.locals.bronxResidents = bronxResidents;
-      res.render(bronxResidents);
-    } else if (Users.find ({ borough: brooklyn})){
-    	brooklynResidents.push(User);
-      res.locals.brooklynResidents = brooklynResidents;
-      res.render(brooklynResidents);
-    } else if (Users.find ({ borough: manhattan})){
-    	manhattanResidents.push(User);
-      res.locals.manhattanResidents = manhattanResidents;
-      res.render(manhattanResidents);
-    } else if (Users.find ({ borough: queens})){
-    	queensResidents.push(User);
-      res.locals.queensResidents = queensResidents;
-      res.render(queensResidents);
-    } else if (Users.find ({ borough: staten island})){
-    	statenIslandResidents.push(User);
-      res.locals.statenIslandResidents = statenIslandResidents;
-      res.render(statenIslandResidents);
+    //print each
 
-
-
-    res.render("forum");
+Users.find({ borough : bronx }, (err, results) => {
+allResidents.push(bronxResidents);
+}
+Users.find({ borough : brooklyn }, (err, results) => {
+allResidents.push(brooklynResidents);
+}
+Users.find({ borough : manhattan }, (err, results) => {
+allResidents.push(manhattanResidents);
+}
+Users.find({ borough : queens }, (err, results) => {
+allResidents.push(queensResidents);
+}
+Users.find({ borough : queens }, (err, results) => {
+allResidents.push(statenIslandResidents);
+}
+res.render('forum', { 'forum.hbs', allResidents } );
+    //res.render(allResidents);
     //is loggedin as parameter
 });
 
+/*
+    (Users.find ({ borough: bronx})){
+      bronxResidents.push(User);
+      res.locals.bronxResidents = bronxResidents;
+      res.render(bronxResidents);
+    } else if (Users.find ({ borough: brooklyn})){
+      brooklynResidents.push(User);
+      res.locals.brooklynResidents = brooklynResidents;
+      res.render(brooklynResidents);
+    } else if (Users.find ({ borough: manhattan})){
+      manhattanResidents.push(User);
+      res.locals.manhattanResidents = manhattanResidents;
+      res.render(manhattanResidents);
+    } else if (Users.find ({ borough: queens})){
+      queensResidents.push(User);
+      res.locals.queensResidents = queensResidents;
+      res.render(queensResidents);
+    } else if (Users.find ({ borough: staten island})){
+      statenIslandResidents.push(User);
+      res.locals.statenIslandResidents = statenIslandResidents;
+      res.render(statenIslandResidents);
 
+*/
 
 function loggedIn(req, res, next){
     if(req.isAuthenticated()){
