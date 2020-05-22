@@ -186,22 +186,24 @@ app.get("/forum", loggedIn, function(req, res){
     //put all users into different arrays
     if (Users.find ({ borough: bronx})){
     	bronxResidents.push(User);
-    	bronxResidents.forEach(printDonationsNameEmail);
-    	//printDonationsNameEmail(bronxResidents);
+      res.locals.bronxResidents = bronxResidents;
+      res.render(bronxResidents);
     } else if (Users.find ({ borough: brooklyn})){
     	brooklynResidents.push(User);
-    	brooklynResidents.forEach(printDonationsNameEmail);
-    	//printDonationsNameEmail(brooklynResidents);
+      res.locals.brooklynResidents = brooklynResidents;
+      res.render(brooklynResidents);
     } else if (Users.find ({ borough: manhattan})){
     	manhattanResidents.push(User);
-    	manhattanResidents.forEach(printDonationsNameEmail);
+      res.locals.manhattanResidents = manhattanResidents;
+      res.render(manhattanResidents);
     } else if (Users.find ({ borough: queens})){
     	queensResidents.push(User);
-    	queensResidents.forEach(printDonationsNameEmail);
+      res.locals.queensResidents = queensResidents;
+      res.render(queensResidents);
     } else if (Users.find ({ borough: staten island})){
     	statenIslandResidents.push(User);
-    	statenIslandResidentsat.forEach(printDonationsNameEmail);
-    //db.collection.find().forEach(sortByBorough),
+      res.locals.statenIslandResidents = statenIslandResidents;
+      res.render(statenIslandResidents);
 
 
 
@@ -218,6 +220,8 @@ function loggedIn(req, res, next){
     res.redirect("/login");
 }
 
+
+/*
 function printDonationsNameEmail(boroughArray){
 
 	if (!(Users.find ({ donations: })) === ""))){
@@ -229,6 +233,7 @@ function printDonationsNameEmail(boroughArray){
 		//User.donations.toString()); 
 	//email address
 	//
+  */
   
 		//if they are donating
 	//console.log
@@ -250,13 +255,13 @@ function printDonationsNameEmail(boroughArray){
 
 //handle css
 
-deploy w aws
+//deploy w aws
 
-gitignore
+//.gitignore
 
-json files?
+//json files?
 
-print on html
+//print on html
 
 //update function??
 

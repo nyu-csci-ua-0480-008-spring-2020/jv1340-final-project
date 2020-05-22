@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+    <h1>Donation Forum</h1>
+    <form action="/logout" method="GET" style="width: 450px;" >
+
+<a href='/login'><button>Log Out</button></a>
+
+
+</form>
+
+
+    <h1>Donation Forum</h1>
+
+          <p style="margin-top: 120px;">Here is a list of all the donors and the items they are donating by borough.
+          Please use the email address provided to contact them. </p>
+          <hr>
+
+
+            
+          
+   {{#each users}}
+                <tr>
+                    <td>{{this.firstName}}</td>
+                    <td>{{this.lastName}}</td>
+                    <td>{{this.email}}</td>
+                    <td>{{this.borough}}</td>
+                    <td>{{this.donations}}</td>
+               
+               </tr>
+                {{/each}}
+
+
+      
+
+
+       
+
+
+  </div>
+  
+  
+    
+  </div>
+
+
+</body>
+</html>
+
+
+
+

@@ -23,19 +23,26 @@
           Please use the email address provided to contact them. </p>
           <hr>
           
-    <h1>Bronx</h1>
 
-    <h1>Brooklyn</h1>
+ 
+                {{#each users}}
+                <tr>
+                    {{!-- <th scope="row"> <a href="/problems/{{this.name}}">{{this.name}}</a></th> --}}
+                    <td scope="row">{{this.username}}</td>
+                    <td>{{this.rating}}</td>
+                    {{!-- <td>hi</td>
+                    <td>hi</td> --}}
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
 
-    <h1>Manhattan</h1>
-
-    <h1>Queens</h1>
-    
-    <h1>Staten Island</h1>
+    </div>
 
 
+</div>
 
-          // each loop
+   // each loop
           //loop over all items in database
             //sort by borough 
             //make borough headers
@@ -48,20 +55,6 @@
            //deployment
            //what does app.get for moving to a new link look like
            //update??
-
-
-       
-
-
-  </div>
-  
-  
-    
-  </div>
-
-
-</body>
-</html>
 
 
 
