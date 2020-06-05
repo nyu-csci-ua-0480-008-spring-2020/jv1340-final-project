@@ -1,7 +1,7 @@
 
 # Jahnavi Vyas - Final Project
 
-# I have to finish completing debugging and deployment.
+# Currently completing debugging and deployment.
 
 # Coronavirus Donations
 
